@@ -1,14 +1,29 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
-    }
-  }
+  "Post": `<DataTable xmlns="http://tempuri.org/">
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="NewDataSet">
+<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="KiemTraViTri" msdata:UseCurrentLocale="true">
+<xs:complexType>
+<xs:choice minOccurs="0" maxOccurs="unbounded">
+<xs:element name="KiemTraViTri">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID" type="xs:string" minOccurs="0"/>
+<xs:element name="ViTri" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+<diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+<DocumentElement xmlns="">
+<KiemTraViTri diffgr:id="KiemTraViTri1" msdata:rowOrder="0">
+<ID>Kho A</ID>  Mã vị trí
+<ViTri>Kho thành phẩm sắt cuộn</ViTri>  Tên vị trí
+</KiemTraViTri>
+</DocumentElement>
+</diffgr:diffgram>
+</DataTable>
+`
 }
